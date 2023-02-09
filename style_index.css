@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', 'sans-serif';
+}
+
+header.header {
+    background-color: #E6F0E7;
+    width: 100%;
+    height: 35px;
+    position: fixed;
+    z-index: 100;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 45px;
+}
+
+
+header .contacto a {
+    position: relative;
+    text-decoration: none;
+    left: 86%;
+    top: 7px;
+    margin-left: 20px;
+}
+
+.contacto {
+    right: 100px;
+}
+
+.login {
+    
+    align-items: flex-start;
+    padding: 0px;
+    gap: 21px;
+    position: relative;
+    display: block;
+    flex-direction: column;
+    width: 500px;
+    left: 1170px;
+    top: 60px;
+    
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+form label input {
+    height: 40px;
+    width: 380px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.bienvenido {
+    display: block;
+    top: 150px;
+    position: relative;
+    width: 1222px;
+    height: 97px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: -0.04em;
+    color: white;
+    
+}
+
+.imagen_bienvenido {
+    
+    position: absolute;
+    display: flex;
+    left: -20px;
+    width: 950px;
+    top: -30px;
+    
+    
+}
+
+.neblina {
+    position: absolute;
+    width: 1930px;
+    height: 674px;
+    left: -10px;
+    top: 263px;
+    background: linear-gradient(1.22deg, rgba(0, 0, 0, 0.8) -2.43%, rgba(217, 217, 217, 0) 92.65%);
+    
+}
+
+.recuerdame {
+    
+    flex-direction:row;
+    display: flex;
+    gap: 10px;
+    left: 30px;
+    margin-bottom: 50px;
+    
+}
+
+.olvidado_contrasenia {
+    position: relative;
+    display: flex;
+    left: 50px;
+}
+
+.checkbox {
+    box-sizing: border-box;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    
+}
+
+.registrate {
+    
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 387px;
+    height: 40px;
+    background: #1E1E1E;
+    border: 1px solid rgba(91, 91, 91, 0.5);
+    border-radius: 7px;
+    order: 0;
+    flex-grow: 0;
+    color: #FCFCFC;
+    order: 0;
+    flex-grow: 0;
+  
+    
+}
+
+.registrate a {
+    text-decoration: none;
+    color: #FCFCFC;
+}
+
+.inicia_sesion {
+    /* la caja */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 20px;
+    width: 800px;
+    height: 47px;
+    border: 1px solid #5B5B5B;
+    border-radius: 8px;
+    /* Inicia sesión con google y tamaño de la caja */
+    width: 387px;
+    height: 40px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #1A1C1E;
+    top: 10px;
+    position: relative;
+    
+}
+
+.boton {
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+.o {
+    position: relative;
+    top: 29px;
+    left: 182px;
+}
+
+
+@media screen and (max-width:800px) {
+
+    body {
+        max-width: 800px;
+    }
+   
+    .imagen_bienvenido {
+        position: absolute;
+        left: 0;
+        width: 800px;
+
+    }
+    .bienvenido {
+        width: 800px;
+    }
+    header.header {
+        max-width: 800px;
+    }
+
+    .contacto {
+        right: 145px;
+        position: relative;
+    }
+    .neblina {
+        width: 806px;
+        top: 110px;
+        left: 0px;
+    }
+
+    .login {
+        width: 412px;
+        left: 220px;
+        top: 726px;
+    }   
+
+
+}
+
+
+
+    @media screen and (max-width:412px) {
+
+            body {
+                max-width: 412px;
+            }
+           
+            .imagen_bienvenido {
+                position: absolute;
+                left: 0;
+                width: 412px;
+
+            }
+            .bienvenido {
+                width: 400px;
+            }
+            .contacto {
+                right: 190px;
+                position: relative;
+            }
+
+            .neblina {
+                width: 100%;
+                top: -285px;
+                left: 0px;
+            }
+
+            .login {
+                width: 402px;
+                left: 10px;
+                top: 356px;
+            }
+    }

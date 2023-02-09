@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', 'sans-serif';
+}
+
+body {
+    background-image: url(./imagenes/imagen_login.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: -4px;
+    background-repeat: no-repeat;
+
+} 
+
+header.header {
+    background-color: #E6F0E7;
+    width: 100%;
+    height: 35px;
+    position: fixed;
+    z-index: 100;
+}
+
+header a {
+    position: fixed;
+    text-decoration: none;
+    right: 15px;
+    top: 7px;
+}
+
+header a.nosotros {
+    right: 100px;
+}
+
+.login input {
+
+        box-sizing: border-box;
+        position: relative;
+        display: block;
+        width: 638px;
+        height: 47.28px;
+        background: #EBF4EA;
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        border-radius: 4px;
+
+}
+
+.contenido {
+    padding-top: 170px;
+    padding-left: 60%;
+    color: white;
+}
+
+.contenido h1, p {
+    margin-bottom: 15px;
+    max-width: 638px;
+}
+
+.contenido input {
+    margin: 20px 20px 20px 0px;
+}
+
+.login .checkbox  {
+
+    position: relative;
+    width: 24px;
+    height: 24px;
+    background: #242424;
+    border: 1px solid #3D3D3D;
+    border-radius: 4px;
+    top: 52px;
+    left: -53px;
+
+}
+
+.aceptarterminos {
+    position: relative;
+    top: -44px;
+    left: 55px;
+}
+
+.botoncontinuar {
+    position: relative;
+    width: 200px;
+    height: 48px;
+    background: #3A8A09;
+    border-radius: 6px;
+    border: none;
+    font-weight: 600;
+    color: white;
+    top: 80px;
+    right: 155px;
+
+}
+
+.botoncontinuar a {
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width:800px) {
+
+    body {
+        max-width: 412px;
+        background-position: 50%;
+
+    }
+
+    header.header {
+        max-width: 800px;
+    }
+
+    .contenido {
+        position: relative;
+        left: 425px;
+        padding-top: 143px;
+        padding-left: 7px;
+    }
+
+    .botoncontinuar {
+        top: 56px;
+        left: -91px;
+    }
+
+    .contenido input {
+        width: 343px;
+    }
+
+    .aceptarterminos {
+        top: -36px;
+        left: 43px;
+    }
+
+    .checkbox {
+        position: relative;
+        top: 53px;
+        left: -42px;
+    }
+}
+
+
+@media screen and (max-width:412px) {
+
+    body {
+        max-width: 412px;
+        background-position: 50%;
+    
+        
+    }
+
+    header.header {
+        max-width: 412px;
+    }
+
+    header a.contacto {
+        right: 82px;
+    }
+
+    header a.nosotros {
+        right: 167px;
+    }
+
+    .contenido {
+        left: 0px;
+        padding-top: 143px;
+        padding-left: 33px;
+    }
+
+    .botoncontinuar {
+        top: 41px;
+        left: -87px;
+
+    }
+
+    .contenido input {
+        width: 343px;
+    }
+
+    .aceptarterminos {
+        top: -36px;
+        left: 46px;
+    }
+
+    .checkbox {
+        position: relative;
+        top: 53px;
+        left: -40px;
+    }
+}
