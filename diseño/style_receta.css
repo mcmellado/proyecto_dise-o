@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', 'sans-serif';
+}
+
+
+header.header {
+    background-color: #E6F0E7;
+    width: 100%;
+    height: 35px;
+    position: fixed;
+    z-index: 100;
+}
+
+header a {
+    position: fixed;
+    text-decoration: none;
+    right: 15px;
+    top: 7px;
+}
+
+header a.nosotros {
+    right: 100px;
+}
+
+.banner img {
+    position: fixed;
+    width: fit-content;
+    max-height: 187px;
+    min-width: 100%;
+    z-index: 1;
+    
+}
+
+.imgusuario img {
+    position: sticky;
+    top:  120px;
+    left: 272px;    
+    z-index: 10;
+
+}
+
+.sidebar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height:calc(100% - 176px);
+    width: 317px;
+    padding: 10px 14px;
+    background: #f7fcf4;
+}
+
+.sidebar .usuarionombre {
+    position: relative;
+    top: 97px;
+    left: 12px;
+}
+
+.sidebar .usuariodescripcion {
+    position: relative;
+    top: 133px;
+    width: 247px;
+    left: 17px;
+    
+}
+
+.sidebar .usuariolocalizacion {
+    position: relative;
+    top: 150px;
+    left: 18px;
+}
+
+
+.menu {
+    position: relative;
+    top: 192px;
+    left: 51px;
+    
+
+}
+
+.menulink {
+    height: 41px;
+    margin-top: 2px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    background-color: #d7e4d8;
+    width: 251px;
+}
+
+.menulink a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.menulink .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 60px;
+    font-size: 20px;
+}
+
+.menulink:hover {
+    background: #bccab3;
+}
+
+
+.cerrarsesion {
+    position: relative;
+    top: 357px;
+    left: 51px;
+}
+
+.contenido {
+    position: relative;
+    height: 100%;
+    width: calc(100% - 250px);
+    left: 250px;
+    top: 50px;
+}
+
+.barraprincipal {
+    position: relative;
+    list-style: none;
+    display: flex;
+    top: -15px;
+    left: 268px;
+    width: fit-content;
+}
+
+.barraprincipal li {
+    margin: 9px;
+}
+
+.barraprincipal li a {
+    border: 1px solid black;
+    border-radius: 8px;
+    display: inline-block;
+    padding: 30px;
+    text-align: center;
+    height: 43px;
+    text-decoration: none;
+    color: black;
+    box-shadow: 2px 2px 5px #999;
+}
+
+
+.descripcionreceta {
+    background-color: #d7e4d8;
+    width: 1219px;
+    height: 629px;
+    position: relative;
+    top: 18px;
+    left: 189px;
+}
+
+
+.receta {
+    position: relative;
+    background-color: #97CE64;
+    top: 0px;
+    left: 0px;
+    height: 176px;
+    width: inherit;
+    
+}
+
+.receta h3 {
+    position: relative;
+    top: 55px;
+    left: 300px;
+    font-size: 32px;
+    width: 339px;
+}
+
+.receta img {
+    position: relative;
+    top: -61px;
+    left: 666px;
+    width: 186px;
+    border-radius: 10px;
+}
+
+.instrucciones {
+    position: relative;
+    top: 38px;
+    left: 57px;
+    width: 549px;
+    height: 366px;
+}
+
+.instrucciones p {
+    line-height: 26px;
+    margin-top: 10px;
+}
+
+.instrucciones h2 {
+    position: relative;
+    top: 0px;
+    left: 176px;
+}
+
+.ingredientes {
+    background-color: #97CE64;
+    position: relative;
+    top: -324px;
+    left: 861px;
+    padding: 24px;
+    height: 189x;
+    width: 199px;
+    border-radius: 19px;
+}
+
+.ingredientes h2 {
+    margin-bottom: 16px;
+}
+
+.recetaiconos {
+    position: relative;
+    top: -158px;
+    left: 1032px;
+    font-size: 29px;
+    width: fit-content;
+}
+
+.recetaiconos a {
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width:1200px) {
+
+    .barraprincipal {
+        top: -9px;
+        left: 179px;
+    }
+
+    .barraprincipal li a {
+        padding: 14px;
+    }
+
+    .receta {
+        height: 349px;
+        width: 671px;
+    }
+
+    .receta h3 {
+        top: 55px;
+        left: 209px;
+        font-size: 30px;
+    }
+
+    .receta img  {
+        left: 262px;
+        top: 98px;
+    }
+
+    .descripcionreceta {
+        width: 673px;
+        height: 1131px;
+    }
+
+    .instrucciones {
+        top: 270px;
+        left: 131px;
+        width: 473px;
+    }
+
+    .instrucciones h2 {
+        top: 0px;
+        left: 134px;
+    }
+
+    .ingredientes {
+        top: -324px;
+        left: 266px;
+    }
+
+    .recetaiconos {
+        top: 176px;
+        left: 479px;
+    }
+
+
+}
+
+
+@media screen and (max-width:800px) {
+
+    .barraprincipal {
+        top: -11px;
+        left: 130px;
+    }
+
+    .barraprincipal li a {
+        padding: 6px;
+    }
+
+    .receta {
+        height: 349px;
+        width: 423px;
+    }
+
+    .receta h3 {
+        top: 55px;
+        left: 36px;
+        font-size: 30px;
+    }
+
+    .receta img  {
+        left: 109px;
+        top: 98px;
+    }
+
+    .descripcionreceta {
+        width: 424px;
+        height: 1416px;
+        left: 88px;
+        top: 30px;
+    }
+
+    .instrucciones {
+        top: 278px;
+        left: 48px;
+        width: 291px;
+    }
+
+    .instrucciones h2 {
+        top: 0px;
+        left: 57px;
+    }
+
+    .ingredientes {
+        top: -324px;
+        left: 117px;
+    }
+
+    .recetaiconos {
+        top: 473px;
+        left: 252px;
+    }
+
+
+}
+
+@media screen and (max-width:412px) {
+
+    .imgusuario img {
+        left: 19px;
+    }
+
+    .sidebar {
+        width: 122px;
+        z-index: 8;
+    }
+
+    .sidebar .usuarionombre {
+        position: relative;
+        top: 50px;
+        left: -5px;
+        font-size: 13px;
+      }
+      
+    .usuariodescripcion {
+              display: none;
+          }
+    .usuariolocalizacion {
+        display: none;
+    }
+
+    .menulink {
+        width: 56px;
+    }
+
+    .menulink span {
+        display: none;
+    }
+
+    .barraprincipal {
+        display: block;
+        top: 54px;
+        left: -146px;
+      }
+
+      .barraprincipal li {
+        margin: 9px;
+
+      }
+
+      .barraprincipal li a {
+        padding: 11px;
+     
+      }
+
+      .descripcionreceta {
+        background-color: #d7e4d8;
+        width: 262px;
+        height: 619px;
+        position: relative;
+        top: 66px;
+        left: -116px;
+      }
+
+      .receta {
+        height: 335px;
+      }
+
+      .receta h3 {
+        top: 25px;
+        left: 17px;
+        font-size: 22px;
+        width: 112px;
+
+      }
+
+      .receta img {
+        top: 57px;
+        left: 40px;
+      }
+
+      .instrucciones {
+        top: 336px;
+        left: 43px;
+        width: 189px;
+        height: 277px;
+      }
+      
+      .instrucciones h2 {
+        top: 0px;
+        left: 2px;
+      }
+
+      .ingredientes {
+        top: -249px;
+        left: 31px;
+      }
+
+      .descripcionreceta {
+        height: 1860px;
+      }
+
+      .recetaiconos {
+        top: 1012px;
+        left: 58px;
+      }
+
+    
+}

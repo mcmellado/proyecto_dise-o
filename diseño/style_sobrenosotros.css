@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', 'sans-serif';
+}
+
+header.header {
+    background-color: #E6F0E7;
+    width: 100%;
+    height: 35px;
+    position: fixed;
+    z-index: 100;
+}
+
+header a {
+    position: fixed;
+    text-decoration: none;
+    right: 15px;
+    top: 7px;
+}
+
+header a.nosotros {
+    right: 100px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 45px;
+}
+
+
+.sobreN {
+   color:white;
+   position: relative;
+   top: 182px;
+   left: 390px;
+   font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 59px;
+    width: 480px;
+    
+}
+
+.imagen_sobrenosotros {
+    
+    position: absolute;
+    display: flex;
+    left: -20px;
+    width: 950px;
+    top: -30px;
+    
+}
+
+.contenido {
+    z-index: 8;
+    display: flex;
+    position: relative;
+    width: fit-content;
+    left: 54%;
+    padding: 10px;
+    top: 185px;
+    background-color: #ffeded27;
+    margin-right: 65%;
+}
+
+.contenido p {
+    margin-bottom: 15px;
+    max-width: 651px;
+    font-size: 23px;
+    line-height: 33px;
+    
+}
+
+@media screen and (max-width:1000px) {
+
+    .contenido p {
+        color: white;
+    }
+
+    .header.header {
+        max-width: 1000px;
+    }
+    
+}
+
+@media screen and (max-width:800px) {
+
+    body {
+        max-width: 800px;
+    }
+   
+    .imagen_sobrenosotros {
+        position: absolute;     
+        width: 800px;
+        height: 105%;
+
+    }
+    .sobreN {
+        width: 461px;
+        left: 197px;
+    }
+
+    .contenido {
+        width: 59%;
+        left: 30%;
+    }
+
+
+} 
+
+    @media screen and (max-width:412px) {
+
+            body {
+                max-width: 412px;
+            }
+           
+            .imagen_sobrenosotros {
+                position: absolute;
+                left: 0;
+                width: 412px;
+                height: 453px;
+
+            }
+            
+            .sobreN {
+                width: 351px;
+                left: 82px;
+            }
+            header.header  {
+                max-width: 412px;
+            }
+
+            .contenido p {
+                font-size: 18px;
+                line-height: 23px;
+                color: black;
+              }
+            .contenido {
+                color: black;
+                top: 311px;
+                left: 95px;
+
+            }
+
+    }
+
+    

@@ -7,12 +7,15 @@
     font-family: 'Inter', 'sans-serif';
 }
 
-/* body {
-    background-image: url(imagen_login.png);
+body {
+    background-image: url(./imagenes/imagen_login.png);
     background-size: cover;
     background-attachment: fixed;
+    background-position: -4px;
+    background-repeat: no-repeat;
+    
 
-} */
+} 
 
 header.header {
     background-color: #E6F0E7;
@@ -33,19 +36,221 @@ header a.nosotros {
     right: 100px;
 }
 
-div.h3 { 
-    position: absolute;
-    width: 228px;
+.login input {
+
+        box-sizing: border-box;
+        position: relative;
+        display: block;
+        width: 638px;
+        height: 47.28px;
+        background: #EBF4EA;
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        border-radius: 4px;
+
+}
+
+form {
+    width: 0px;
+}
+
+.contenido {
+    padding-top: 170px;
+    padding-left: 60%;
+    color: white;
+    width: 1831px;
+}
+
+.contenido h1, p {
+    margin-bottom: 15px;
+    max-width: 638px;
+}
+
+.contenido input {
+    margin: 20px 20px 20px 0px;
+}
+
+.login .checkbox  {
+
+    position: relative;
+    width: 24px;
+    height: 24px;
+    background: #242424;
+    border: 1px solid #3D3D3D;
+    border-radius: 4px;
+    top: 41px;
+    left: -53px;
+
+}
+
+.aceptarterminos {
+    position: relative;
+    top: -38px;
+    left: 55px;
+    display: inline-block;
+    width: 184px;
+}
+
+.botoncontinuar {
+    position: relative;
+    width: 200px;
     height: 48px;
-    left: 723px;
-    top: 84px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 48px;
-    display: flex;
-    align-items: center;
+    background: #3A8A09;
+    border-radius: 6px;
+    border: none;
+    font-weight: 600;
+    color: white;
+    top: 23px;
+    right: 9px;
+
+}
+
+.botoncontinuar a {
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width:1200px) {
+
+    body {
+        max-width: 1200px;
+        background-position: 50%;
     
-    color: black;
+
+    }
+
+    .contenido p {
+        margin-bottom: 15px;
+        max-width: 455px;
+    }
+
+    header.header {
+        max-width: 1200px;
+    }
+
+    .contenido {
+        width: 406px;
+        position: relative;
+        left: 644px;
+        padding-top: 143px;
+        padding-left: 7px;
+    }
+
+    .botoncontinuar {
+        top: 17px;
+        left: -19px;
+    }
+
+    .contenido input {
+        width: 343px;
+    }
+
+    .aceptarterminos {
+        top: -36px;
+        left: 43px;
+    }
+
+    .checkbox {
+        position: relative;
+        top: 53px;
+        left: -42px;
+    }
+}
+
+@media screen and (max-width:800px) {
+
+    body {
+        max-width: 412px;
+        background-position: 50%;
+    
+
+    }
+
+    .contenido p {
+        margin-bottom: 15px;
+        max-width: 455px;
+    }
+
+    header.header {
+        max-width: 800px;
+    }
+
+    .contenido {
+        position: relative;
+        left: 227px;
+        padding-top: 143px;
+        padding-left: 7px;
+    }
+
+    .botoncontinuar {
+        top: 29px;
+        left: -87px;
+    }
+
+    .contenido input {
+        width: 343px;
+    }
+
+    .aceptarterminos {
+        top: -36px;
+        left: 43px;
+    }
+
+    .checkbox {
+        position: relative;
+        top: 53px;
+        left: -42px;
+    }
+}
+
+
+@media screen and (max-width:412px) {
+
+    body {
+        max-width: 412px;
+        background-position: 50%;
+    
+        
+    }
+
+    header.header {
+        max-width: 412px;
+    }
+
+    header a.contacto {
+        right: 82px;
+    }
+
+    header a.nosotros {
+        right: 167px;
+    }
+
+    .contenido {
+        padding-top: 130px;
+        padding-left: 1%;
+        color: white;
+        width: 610px;
+        left: 62%;
+        position: relative;
+    }
+
+    .botoncontinuar {
+        top: -1px;
+        left: 59px;
+
+    }
+
+    .contenido input {
+        width: 343px;
+    }
+
+    .aceptarterminos {
+        top: -36px;
+        left: 46px;
+    }
+
+    .checkbox {
+        position: relative;
+        top: 53px;
+        left: -40px;
+    }
 }

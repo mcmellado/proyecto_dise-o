@@ -7,18 +7,12 @@
     font-family: 'Inter', 'sans-serif';
 }
 
-
 header.header {
     background-color: #E6F0E7;
     width: 100%;
     height: 35px;
     position: fixed;
     z-index: 100;
-}
-
-h1 {
-    font-weight: 700;
-    font-size: 45px;
 }
 
 header a {
@@ -32,18 +26,25 @@ header a.nosotros {
     right: 100px;
 }
 
-.login {
+h1 {
+    font-weight: 700;
+    font-size: 45px;
+}
 
+
+
+.login {
+    
     align-items: flex-start;
     padding: 0px;
     gap: 21px;
-    position: absolute;
-    display: flex;
+    position: relative;
+    display: block;
     flex-direction: column;
     width: 500px;
-    right: 100px;
-    top: 200px;
-
+    left: 1170px;
+    top: 60px;
+    
 }
 
 form label {
@@ -60,8 +61,7 @@ form label input {
 }
 
 .bienvenido {
-    display: flex;
-    left: 460px;
+    display: block;
     top: 150px;
     position: relative;
     width: 1222px;
@@ -74,36 +74,33 @@ form label input {
     text-align: center;
     letter-spacing: -0.04em;
     color: white;
+    
+}
 
+.overlay {
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .imagen_bienvenido {
     
-    position: fixed;
-    width: 950px;
-    height:max-content;
-    
-    
-}
-
-.neblina {
     position: absolute;
-    width: 1930px;
-    height: 674px;
-    left: -10px;
-    top: 263px;
-    background: linear-gradient(1.22deg, rgba(0, 0, 0, 0.8) -2.43%, rgba(217, 217, 217, 0) 92.65%);
+    display: flex;
+    left: -20px;
+    width: 950px;
+    top: -30px;
 
+    
+    
 }
 
 .recuerdame {
-
+    
     flex-direction:row;
     display: flex;
     gap: 10px;
     left: 30px;
     margin-bottom: 50px;
-
+    
 }
 
 .olvidado_contrasenia {
@@ -121,11 +118,11 @@ form label input {
     flex: none;
     order: 0;
     flex-grow: 0;
-
+    
 }
 
- .registrate {
-
+.registrate {
+    
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -142,8 +139,14 @@ form label input {
     color: #FCFCFC;
     order: 0;
     flex-grow: 0;
+  
+    
+}
 
-} 
+.registrate a {
+    text-decoration: none;
+    color: #FCFCFC;
+}
 
 .inicia_sesion {
     /* la caja */
@@ -167,13 +170,109 @@ form label input {
     line-height: 19px;
     text-align: center;
     color: #1A1C1E;
-
+    top: 10px;
+    position: relative;
+    
 }
 
-.botones {
+.boton {
     align-items: center;
     gap: 10px;
     position: absolute;
     display: flex;
     flex-direction: column;
 }
+
+.o {
+    position: relative;
+    top: 29px;
+    left: 182px;
+}
+
+@media screen and (max-width:1200px) {
+
+    body {
+        max-width: 1200px;
+        overflow-x: hidden;
+    
+    }
+   
+    .imagen_bienvenido {
+        position: absolute;
+        left: -2px;
+        width: 1044px;
+        height: 947px;
+
+    }
+    .bienvenido {
+        width: 1007px;
+    }
+    header.header {
+        max-width: 1200px;
+    }
+
+    .login {
+        width: 419px;
+        left: 305px;
+        top: 865px;
+    }   
+
+
+}
+
+
+@media screen and (max-width:800px) {
+    
+    body {
+        max-width: 800px;
+        overflow-x: hidden;
+    }
+    
+    .imagen_bienvenido {
+        position: absolute;
+        width: 795px;
+        height: 753px;
+
+    }
+    .bienvenido {
+        width: 800px;
+    }
+    header.header {
+        max-width: 800px;
+    }
+
+    .login {
+        width: 412px;
+        left: 25%;
+        top: 680px;
+    }   
+    
+    
+}
+
+    @media screen and (max-width:412px) {
+
+            body {
+                max-width: 412px;
+                overflow-x: hidden;
+            }
+           
+            .imagen_bienvenido {
+                position: absolute;
+                left: 0;
+                width: 402px;
+            height: 413px;
+
+            }
+            .bienvenido {
+                width: 400px;
+            }
+
+            .login {
+                width: 402px;
+                left: 10px;
+                top: 356px;
+            }
+    }
+
+    
